@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Naya Finds Co. — high-end makeup price list.">
+<title>Makeup Pricelist | Naya Finds Co.</title>
+<style>
+:root{--wine:#7e202b;--rose:#b66e7c;--blush:#f8e9eb;--cream:#fffaf8;--ink:#292326;--muted:#766c6f;--line:#eadde0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}.announcement{background:var(--wine);color:white;text-align:center;padding:10px 14px;font-size:11px;letter-spacing:2px;font-weight:700}
+header{background:#fffaf8ed;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(10px)}
+.nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{font-family:Georgia,serif;font-size:25px;font-weight:bold;letter-spacing:-1px;color:var(--wine)}.logo span{color:var(--ink)}
+.bag{border:1px solid var(--line);border-radius:999px;padding:10px 13px;background:white;font-size:12px}
+main{max-width:1100px;margin:auto;padding:22px 20px 55px}
+.hero{background:linear-gradient(120deg,#81242f,#a95565 60%,#c38b99);color:white;border-radius:25px;padding:clamp(28px,5vw,58px);position:relative;overflow:hidden}
+.eyebrow{font-size:11px;letter-spacing:3px;font-weight:700;margin:0 0 14px}h1{font-family:Georgia,serif;font-size:clamp(34px,6vw,58px);line-height:1.03;letter-spacing:-1.5px;margin:0 0 15px}
+.hero p{font-size:14px;line-height:1.7;max-width:600px;color:#fff0f2;margin:0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:32px 0 16px}.section-head h2{font-family:Georgia,serif;font-size:27px;margin:0}.section-head p{font-size:13px;color:var(--muted);margin:6px 0 0}
+.toolbar{display:flex;gap:10px;margin:16px 0 18px}.search{flex:1;min-width:0;border:1px solid var(--line);background:white;border-radius:13px;padding:13px 14px;font-size:14px;outline-color:var(--rose)}select{max-width:100%;border:1px solid var(--line);border-radius:13px;padding:12px;background:white;color:var(--ink);font-size:13px}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.product{background:white;border:1px solid var(--line);border-radius:16px;padding:17px;display:flex;flex-direction:column;min-width:0;box-shadow:0 4px 14px #53212b08}
+.brand{display:inline-flex;align-self:flex-start;background:var(--blush);color:var(--wine);padding:6px 9px;border-radius:999px;font-size:10px;letter-spacing:.7px;font-weight:800;margin-bottom:12px}
+.product h3{font-size:15px;line-height:1.4;margin:0 0 12px;min-height:42px}
+.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}
+.price{font-weight:800;color:var(--wine);font-size:17px;white-space:nowrap}
+.qty{width:88px;padding:8px;border-radius:10px;font-size:12px}
+.order{border:0;border-radius:999px;padding:11px 14px;background:var(--wine);color:white;font-size:12px;font-weight:700;cursor:pointer;margin-top:14px;width:100%}
+.order:hover{background:#5e1720}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.empty{display:none;grid-column:1/-1;padding:25px;text-align:center;color:var(--muted);background:white;border:1px solid var(--line);border-radius:16px}
+.note{margin-top:28px;background:var(--blush);border-radius:18px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.note h3{font-family:Georgia,serif;font-size:22px;margin:0 0 7px}.note p{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
+.btn{display:inline-block;border:0;border-radius:999px;padding:13px 18px;font-weight:700;background:var(--wine);color:white;font-size:13px;white-space:nowrap}
+footer{background:#381b20;color:#fff5f5;padding:27px 20px}.footer-inner{max-width:1060px;margin:auto;display:flex;justify-content:space-between;gap:18px;align-items:center}.footer-inner p{font-size:12px;color:#e3c9ce;line-height:1.6}
+@media(max-width:760px){.nav{padding:14px}.logo{font-size:22px}main{padding:15px 13px 38px}.hero{border-radius:20px;padding:28px 22px}.toolbar{flex-direction:column}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product{padding:12px}.product h3{font-size:13px;min-height:38px}.product-bottom{align-items:flex-start;flex-direction:column;gap:8px}.qty{width:100%}.price{font-size:16px}.note,.footer-inner{align-items:flex-start;flex-direction:column}.section-head h2{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="announcement">HIGH-END MAKEUP PRICELIST ✨</div>
+<header><nav class="nav">
+<a class="logo" href="#"><span>Naya</span> Finds Co.</a>
+<a class="bag" href="#shop">MAKEUP PRICELIST ♡</a>
+</nav></header>
+<main>
+<section class="hero">
+<p class="eyebrow">NAYA FINDS CO. ✨</p>
+<h1>High-End Make Up<br>Pricelist</h1>
+<p>All 15 brands and 73 products in one makeup pricelist. Prices are listed in Philippine pesos. No product photos or shade selections for now.</p>
+</section>
+<section id="shop">
+<div class="section-head"><div><h2>All Makeup Products</h2><p>Browse all brands and products below, with prices and quantity options. Search by product or brand.</p></div></div>
+<div class="toolbar">
+<input class="search" id="search" placeholder="⌕ Search product or brand..." aria-label="Search product or brand">
+</div>
+<div class="products" id="products">\n<article class="product" data-brand="dior" data-name="lip maximizer">
+<span class="brand">DIOR</span>
+<h3>Lip Maximizer</h3>
+<div class="product-bottom"><span class="price">₱638</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for DIOR Lip Maximizer">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="DIOR" data-name="Lip Maximizer" data-price="638">Order now ↗</button>
+</article>\n<article class="product" data-brand="dior" data-name="lip bright butter">
+<span class="brand">DIOR</span>
+<h3>Lip Bright Butter</h3>
+<div class="product-bottom"><span class="price">₱620</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for DIOR Lip Bright Butter">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="DIOR" data-name="Lip Bright Butter" data-price="620">Order now ↗</button>
+</article>\n<article class="product" data-brand="dior" data-name="blush">
+<span class="brand">DIOR</span>
+<h3>Blush</h3>
+<div class="product-bottom"><span class="price">₱869</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for DIOR Blush">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="DIOR" data-name="Blush" data-price="869">Order now ↗</button>
+</article>\n<article class="product" data-brand="dior" data-name="blush contouring">
+<span class="brand">DIOR</span>
+<h3>Blush Contouring</h3>
+<div class="product-bottom"><span class="price">₱783</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for DIOR Blush Contouring">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="DIOR" data-name="Blush Contouring" data-price="783">Order now ↗</button>
+</article>\n<article class="product" data-brand="dior" data-name="glow face">
+<span class="brand">DIOR</span>
+<h3>Glow Face</h3>
+<div class="product-bottom"><span class="price">₱878</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for DIOR Glow Face">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="DIOR" data-name="Glow Face" data-price="878">Order now ↗</button>
+</article>\n<article class="product" data-brand="dior" data-name="eye shadow">
+<span class="brand">DIOR</span>
+<h3>Eye Shadow</h3>
+<div class="product-bottom"><span class="price">₱839</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for DIOR Eye Shadow">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="DIOR" data-name="Eye Shadow" data-price="839">Order now ↗</button>
+</article>\n<article class="product" data-brand="dior" data-name="lip glow oil">
+<span class="brand">DIOR</span>
+<h3>Lip Glow Oil</h3>
+<div class="product-bottom"><span class="price">₱519</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for DIOR Lip Glow Oil">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="DIOR" data-name="Lip Glow Oil" data-price="519">Order now ↗</button>
+</article>\n<article class="product" data-brand="dior" data-name="lip balm">
+<span class="brand">DIOR</span>
+<h3>Lip Balm</h3>
+<div class="product-bottom"><span class="price">₱455</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for DIOR Lip Balm">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="DIOR" data-name="Lip Balm" data-price="455">Order now ↗</button>
+</article>\n<article class="product" data-brand="dior" data-name="mascara">
+<span class="brand">DIOR</span>
+<h3>Mascara</h3>
+<div class="product-bottom"><span class="price">₱500</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for DIOR Mascara">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="DIOR" data-name="Mascara" data-price="500">Order now ↗</button>
+</article>\n<article class="product" data-brand="charlotte tilbury" data-name="powder oil control">
+<span class="brand">CHARLOTTE TILBURY</span>
+<h3>Powder Oil Control</h3>
+<div class="product-bottom"><span class="price">₱858</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for CHARLOTTE TILBURY Powder Oil Control">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="CHARLOTTE TILBURY" data-name="Powder Oil Control" data-price="858">Order now ↗</button>
+</article>\n<article class="product" data-brand="charlotte tilbury" data-name="powder blush">
+<span class="brand">CHARLOTTE TILBURY</span>
+<h3>Powder Blush</h3>
+<div class="product-bottom"><span class="price">₱899</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for CHARLOTTE TILBURY Powder Blush">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="CHARLOTTE TILBURY" data-name="Powder Blush" data-price="899">Order now ↗</button>
+</article>\n<article class="product" data-brand="charlotte tilbury" data-name="blush 2 color">
+<span class="brand">CHARLOTTE TILBURY</span>
+<h3>Blush 2 Color</h3>
+<div class="product-bottom"><span class="price">₱966</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for CHARLOTTE TILBURY Blush 2 Color">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="CHARLOTTE TILBURY" data-name="Blush 2 Color" data-price="966">Order now ↗</button>
+</article>\n<article class="product" data-brand="charlotte tilbury" data-name="mist spray 100ml">
+<span class="brand">CHARLOTTE TILBURY</span>
+<h3>Mist Spray 100ml</h3>
+<div class="product-bottom"><span class="price">₱999</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for CHARLOTTE TILBURY Mist Spray 100ml">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="CHARLOTTE TILBURY" data-name="Mist Spray 100ml" data-price="999">Order now ↗</button>
+</article>\n<article class="product" data-brand="charlotte tilbury" data-name="lip cheek stick">
+<span class="brand">CHARLOTTE TILBURY</span>
+<h3>Lip Cheek Stick</h3>
+<div class="product-bottom"><span class="price">₱749</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for CHARLOTTE TILBURY Lip Cheek Stick">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="CHARLOTTE TILBURY" data-name="Lip Cheek Stick" data-price="749">Order now ↗</button>
+</article>\n<article class="product" data-brand="charlotte tilbury" data-name="lip nectar oil">
+<span class="brand">CHARLOTTE TILBURY</span>
+<h3>Lip Nectar Oil</h3>
+<div class="product-bottom"><span class="price">₱449</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for CHARLOTTE TILBURY Lip Nectar Oil">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="CHARLOTTE TILBURY" data-name="Lip Nectar Oil" data-price="449">Order now ↗</button>
+</article>\n<article class="product" data-brand="charlotte tilbury" data-name="foundation">
+<span class="brand">CHARLOTTE TILBURY</span>
+<h3>Foundation</h3>
+<div class="product-bottom"><span class="price">₱850</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for CHARLOTTE TILBURY Foundation">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="CHARLOTTE TILBURY" data-name="Foundation" data-price="850">Order now ↗</button>
+</article>\n<article class="product" data-brand="charlotte tilbury" data-name="eye shadow">
+<span class="brand">CHARLOTTE TILBURY</span>
+<h3>Eye Shadow</h3>
+<div class="product-bottom"><span class="price">₱780</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for CHARLOTTE TILBURY Eye Shadow">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="CHARLOTTE TILBURY" data-name="Eye Shadow" data-price="780">Order now ↗</button>
+</article>\n<article class="product" data-brand="ysl" data-name="blush">
+<span class="brand">YSL</span>
+<h3>Blush</h3>
+<div class="product-bottom"><span class="price">₱799</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for YSL Blush">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="YSL" data-name="Blush" data-price="799">Order now ↗</button>
+</article>\n<article class="product" data-brand="ysl" data-name="lip loveshine">
+<span class="brand">YSL</span>
+<h3>Lip Loveshine</h3>
+<div class="product-bottom"><span class="price">₱999</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for YSL Lip Loveshine">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="YSL" data-name="Lip Loveshine" data-price="999">Order now ↗</button>
+</article>\n<article class="product" data-brand="ysl" data-name="cushion">
+<span class="brand">YSL</span>
+<h3>Cushion</h3>
+<div class="product-bottom"><span class="price">₱999</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for YSL Cushion">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="YSL" data-name="Cushion" data-price="999">Order now ↗</button>
+</article>\n<article class="product" data-brand="ysl" data-name="setting powder">
+<span class="brand">YSL</span>
+<h3>Setting Powder</h3>
+<div class="product-bottom"><span class="price">₱999</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for YSL Setting Powder">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="YSL" data-name="Setting Powder" data-price="999">Order now ↗</button>
+</article>\n<article class="product" data-brand="kiko milano" data-name="double head">
+<span class="brand">KIKO MILANO</span>
+<h3>Double Head</h3>
+<div class="product-bottom"><span class="price">₱699</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for KIKO MILANO Double Head">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="KIKO MILANO" data-name="Double Head" data-price="699">Order now ↗</button>
+</article>\n<article class="product" data-brand="kiko milano" data-name="3d hydra">
+<span class="brand">KIKO MILANO</span>
+<h3>3D Hydra</h3>
+<div class="product-bottom"><span class="price">₱699</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for KIKO MILANO 3D Hydra">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="KIKO MILANO" data-name="3D Hydra" data-price="699">Order now ↗</button>
+</article>\n<article class="product" data-brand="kiko milano" data-name="3d hydra extreme">
+<span class="brand">KIKO MILANO</span>
+<h3>3D Hydra Extreme</h3>
+<div class="product-bottom"><span class="price">₱750</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for KIKO MILANO 3D Hydra Extreme">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="KIKO MILANO" data-name="3D Hydra Extreme" data-price="750">Order now ↗</button>
+</article>\n<article class="product" data-brand="kiko milano" data-name="limited edition">
+<span class="brand">KIKO MILANO</span>
+<h3>Limited Edition</h3>
+<div class="product-bottom"><span class="price">₱750</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for KIKO MILANO Limited Edition">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="KIKO MILANO" data-name="Limited Edition" data-price="750">Order now ↗</button>
+</article>\n<article class="product" data-brand="kiko milano" data-name="sponge">
+<span class="brand">KIKO MILANO</span>
+<h3>Sponge</h3>
+<div class="product-bottom"><span class="price">₱200</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for KIKO MILANO Sponge">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="KIKO MILANO" data-name="Sponge" data-price="200">Order now ↗</button>
+</article>\n<article class="product" data-brand="kiko milano" data-name="blush">
+<span class="brand">KIKO MILANO</span>
+<h3>Blush</h3>
+<div class="product-bottom"><span class="price">₱699</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for KIKO MILANO Blush">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="KIKO MILANO" data-name="Blush" data-price="699">Order now ↗</button>
+</article>\n<article class="product" data-brand="kiko milano" data-name="powder">
+<span class="brand">KIKO MILANO</span>
+<h3>Powder</h3>
+<div class="product-bottom"><span class="price">₱699</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for KIKO MILANO Powder">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="KIKO MILANO" data-name="Powder" data-price="699">Order now ↗</button>
+</article>\n<article class="product" data-brand="nars" data-name="concealer">
+<span class="brand">NARS</span>
+<h3>Concealer</h3>
+<div class="product-bottom"><span class="price">₱549</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for NARS Concealer">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="NARS" data-name="Concealer" data-price="549">Order now ↗</button>
+</article>\n<article class="product" data-brand="nars" data-name="foundation">
+<span class="brand">NARS</span>
+<h3>Foundation</h3>
+<div class="product-bottom"><span class="price">₱869</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for NARS Foundation">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="NARS" data-name="Foundation" data-price="869">Order now ↗</button>
+</article>\n<article class="product" data-brand="nars" data-name="blush">
+<span class="brand">NARS</span>
+<h3>Blush</h3>
+<div class="product-bottom"><span class="price">₱804</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for NARS Blush">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="NARS" data-name="Blush" data-price="804">Order now ↗</button>
+</article>\n<article class="product" data-brand="rhode" data-name="phone case w/ lip and box">
+<span class="brand">RHODE</span>
+<h3>Phone Case w/ Lip and Box</h3>
+<div class="product-bottom"><span class="price">₱450</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RHODE Phone Case w/ Lip and Box">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RHODE" data-name="Phone Case w/ Lip and Box" data-price="450">Order now ↗</button>
+</article>\n<article class="product" data-brand="rhode" data-name="pocketblush">
+<span class="brand">RHODE</span>
+<h3>PocketBlush</h3>
+<div class="product-bottom"><span class="price">₱500</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RHODE PocketBlush">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RHODE" data-name="PocketBlush" data-price="500">Order now ↗</button>
+</article>\n<article class="product" data-brand="rhode" data-name="lip moisturizer">
+<span class="brand">RHODE</span>
+<h3>Lip Moisturizer</h3>
+<div class="product-bottom"><span class="price">₱420</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RHODE Lip Moisturizer">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RHODE" data-name="Lip Moisturizer" data-price="420">Order now ↗</button>
+</article>\n<article class="product" data-brand="rhode" data-name="4pcs set">
+<span class="brand">RHODE</span>
+<h3>4pcs Set</h3>
+<div class="product-bottom"><span class="price">₱520</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RHODE 4pcs Set">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RHODE" data-name="4pcs Set" data-price="520">Order now ↗</button>
+</article>\n<article class="product" data-brand="rhode" data-name="milk facial essence">
+<span class="brand">RHODE</span>
+<h3>Milk Facial Essence</h3>
+<div class="product-bottom"><span class="price">₱699</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RHODE Milk Facial Essence">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RHODE" data-name="Milk Facial Essence" data-price="699">Order now ↗</button>
+</article>\n<article class="product" data-brand="rhode" data-name="cream gel moisturize">
+<span class="brand">RHODE</span>
+<h3>Cream Gel Moisturize</h3>
+<div class="product-bottom"><span class="price">₱499</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RHODE Cream Gel Moisturize">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RHODE" data-name="Cream Gel Moisturize" data-price="499">Order now ↗</button>
+</article>\n<article class="product" data-brand="rhode" data-name="glazing mist">
+<span class="brand">RHODE</span>
+<h3>Glazing Mist</h3>
+<div class="product-bottom"><span class="price">₱950</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RHODE Glazing Mist">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RHODE" data-name="Glazing Mist" data-price="950">Order now ↗</button>
+</article>\n<article class="product" data-brand="rhode" data-name="highlighter">
+<span class="brand">RHODE</span>
+<h3>Highlighter</h3>
+<div class="product-bottom"><span class="price">₱599</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RHODE Highlighter">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RHODE" data-name="Highlighter" data-price="599">Order now ↗</button>
+</article>\n<article class="product" data-brand="rare beauty" data-name="lip and cheek">
+<span class="brand">RARE BEAUTY</span>
+<h3>Lip and Cheek</h3>
+<div class="product-bottom"><span class="price">₱400</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RARE BEAUTY Lip and Cheek">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RARE BEAUTY" data-name="Lip and Cheek" data-price="400">Order now ↗</button>
+</article>\n<article class="product" data-brand="rare beauty" data-name="matte blush">
+<span class="brand">RARE BEAUTY</span>
+<h3>Matte Blush</h3>
+<div class="product-bottom"><span class="price">₱500</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RARE BEAUTY Matte Blush">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RARE BEAUTY" data-name="Matte Blush" data-price="500">Order now ↗</button>
+</article>\n<article class="product" data-brand="rare beauty" data-name="foundation">
+<span class="brand">RARE BEAUTY</span>
+<h3>Foundation</h3>
+<div class="product-bottom"><span class="price">₱600</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RARE BEAUTY Foundation">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RARE BEAUTY" data-name="Foundation" data-price="600">Order now ↗</button>
+</article>\n<article class="product" data-brand="rare beauty" data-name="powder foundation">
+<span class="brand">RARE BEAUTY</span>
+<h3>Powder Foundation</h3>
+<div class="product-bottom"><span class="price">₱600</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RARE BEAUTY Powder Foundation">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RARE BEAUTY" data-name="Powder Foundation" data-price="600">Order now ↗</button>
+</article>\n<article class="product" data-brand="rare beauty" data-name="highlighter">
+<span class="brand">RARE BEAUTY</span>
+<h3>Highlighter</h3>
+<div class="product-bottom"><span class="price">₱600</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RARE BEAUTY Highlighter">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RARE BEAUTY" data-name="Highlighter" data-price="600">Order now ↗</button>
+</article>\n<article class="product" data-brand="rare beauty" data-name="lip glaze">
+<span class="brand">RARE BEAUTY</span>
+<h3>Lip Glaze</h3>
+<div class="product-bottom"><span class="price">₱500</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RARE BEAUTY Lip Glaze">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RARE BEAUTY" data-name="Lip Glaze" data-price="500">Order now ↗</button>
+</article>\n<article class="product" data-brand="rare beauty" data-name="liquid blush">
+<span class="brand">RARE BEAUTY</span>
+<h3>Liquid Blush</h3>
+<div class="product-bottom"><span class="price">₱500</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RARE BEAUTY Liquid Blush">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RARE BEAUTY" data-name="Liquid Blush" data-price="500">Order now ↗</button>
+</article>\n<article class="product" data-brand="rare beauty" data-name="liquid highlighter">
+<span class="brand">RARE BEAUTY</span>
+<h3>Liquid Highlighter</h3>
+<div class="product-bottom"><span class="price">₱500</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RARE BEAUTY Liquid Highlighter">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RARE BEAUTY" data-name="Liquid Highlighter" data-price="500">Order now ↗</button>
+</article>\n<article class="product" data-brand="rare beauty" data-name="mascara">
+<span class="brand">RARE BEAUTY</span>
+<h3>Mascara</h3>
+<div class="product-bottom"><span class="price">₱500</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RARE BEAUTY Mascara">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RARE BEAUTY" data-name="Mascara" data-price="500">Order now ↗</button>
+</article>\n<article class="product" data-brand="rare beauty" data-name="bronzer stick">
+<span class="brand">RARE BEAUTY</span>
+<h3>Bronzer Stick</h3>
+<div class="product-bottom"><span class="price">₱630</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RARE BEAUTY Bronzer Stick">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RARE BEAUTY" data-name="Bronzer Stick" data-price="630">Order now ↗</button>
+</article>\n<article class="product" data-brand="rare beauty" data-name="hand cream">
+<span class="brand">RARE BEAUTY</span>
+<h3>Hand Cream</h3>
+<div class="product-bottom"><span class="price">₱500</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for RARE BEAUTY Hand Cream">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="RARE BEAUTY" data-name="Hand Cream" data-price="500">Order now ↗</button>
+</article>\n<article class="product" data-brand="elf" data-name="foundation">
+<span class="brand">ELF</span>
+<h3>Foundation</h3>
+<div class="product-bottom"><span class="price">₱620</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for ELF Foundation">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="ELF" data-name="Foundation" data-price="620">Order now ↗</button>
+</article>\n<article class="product" data-brand="elf" data-name="liquid blush">
+<span class="brand">ELF</span>
+<h3>Liquid Blush</h3>
+<div class="product-bottom"><span class="price">₱500</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for ELF Liquid Blush">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="ELF" data-name="Liquid Blush" data-price="500">Order now ↗</button>
+</article>\n<article class="product" data-brand="elf" data-name="melting lip balm">
+<span class="brand">ELF</span>
+<h3>Melting Lip Balm</h3>
+<div class="product-bottom"><span class="price">₱450</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for ELF Melting Lip Balm">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="ELF" data-name="Melting Lip Balm" data-price="450">Order now ↗</button>
+</article>\n<article class="product" data-brand="elf" data-name="primer">
+<span class="brand">ELF</span>
+<h3>Primer</h3>
+<div class="product-bottom"><span class="price">₱500</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for ELF Primer">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="ELF" data-name="Primer" data-price="500">Order now ↗</button>
+</article>\n<article class="product" data-brand="chanel" data-name="mascara">
+<span class="brand">CHANEL</span>
+<h3>Mascara</h3>
+<div class="product-bottom"><span class="price">₱450</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for CHANEL Mascara">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="CHANEL" data-name="Mascara" data-price="450">Order now ↗</button>
+</article>\n<article class="product" data-brand="mac" data-name="blush">
+<span class="brand">MAC</span>
+<h3>Blush</h3>
+<div class="product-bottom"><span class="price">₱599</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for MAC Blush">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="MAC" data-name="Blush" data-price="599">Order now ↗</button>
+</article>\n<article class="product" data-brand="mac" data-name="lipstick">
+<span class="brand">MAC</span>
+<h3>Lipstick</h3>
+<div class="product-bottom"><span class="price">₱499</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for MAC Lipstick">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="MAC" data-name="Lipstick" data-price="499">Order now ↗</button>
+</article>\n<article class="product" data-brand="mac" data-name="mascara">
+<span class="brand">MAC</span>
+<h3>Mascara</h3>
+<div class="product-bottom"><span class="price">₱350</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for MAC Mascara">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="MAC" data-name="Mascara" data-price="350">Order now ↗</button>
+</article>\n<article class="product" data-brand="nyx" data-name="lip gloss stain">
+<span class="brand">NYX</span>
+<h3>Lip Gloss Stain</h3>
+<div class="product-bottom"><span class="price">₱450</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for NYX Lip Gloss Stain">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="NYX" data-name="Lip Gloss Stain" data-price="450">Order now ↗</button>
+</article>\n<article class="product" data-brand="nyx" data-name="lip liner">
+<span class="brand">NYX</span>
+<h3>Lip Liner</h3>
+<div class="product-bottom"><span class="price">₱300</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for NYX Lip Liner">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="NYX" data-name="Lip Liner" data-price="300">Order now ↗</button>
+</article>\n<article class="product" data-brand="nyx" data-name="16 color eyeshadow">
+<span class="brand">NYX</span>
+<h3>16 Color Eyeshadow</h3>
+<div class="product-bottom"><span class="price">₱699</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for NYX 16 Color Eyeshadow">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="NYX" data-name="16 Color Eyeshadow" data-price="699">Order now ↗</button>
+</article>\n<article class="product" data-brand="huda beauty" data-name="setting powder">
+<span class="brand">HUDA BEAUTY</span>
+<h3>Setting Powder</h3>
+<div class="product-bottom"><span class="price">₱800</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for HUDA BEAUTY Setting Powder">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="HUDA BEAUTY" data-name="Setting Powder" data-price="800">Order now ↗</button>
+</article>\n<article class="product" data-brand="huda beauty" data-name="lip gloss">
+<span class="brand">HUDA BEAUTY</span>
+<h3>Lip Gloss</h3>
+<div class="product-bottom"><span class="price">₱480</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for HUDA BEAUTY Lip Gloss">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="HUDA BEAUTY" data-name="Lip Gloss" data-price="480">Order now ↗</button>
+</article>\n<article class="product" data-brand="huda beauty" data-name="liquid eyeliner">
+<span class="brand">HUDA BEAUTY</span>
+<h3>Liquid Eyeliner</h3>
+<div class="product-bottom"><span class="price">₱250</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for HUDA BEAUTY Liquid Eyeliner">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="HUDA BEAUTY" data-name="Liquid Eyeliner" data-price="250">Order now ↗</button>
+</article>\n<article class="product" data-brand="huda beauty" data-name="easybake">
+<span class="brand">HUDA BEAUTY</span>
+<h3>EasyBake</h3>
+<div class="product-bottom"><span class="price">₱750</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for HUDA BEAUTY EasyBake">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="HUDA BEAUTY" data-name="EasyBake" data-price="750">Order now ↗</button>
+</article>\n<article class="product" data-brand="huda beauty" data-name="easybake duo">
+<span class="brand">HUDA BEAUTY</span>
+<h3>EasyBake Duo</h3>
+<div class="product-bottom"><span class="price">₱850</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for HUDA BEAUTY EasyBake Duo">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="HUDA BEAUTY" data-name="EasyBake Duo" data-price="850">Order now ↗</button>
+</article>\n<article class="product" data-brand="patrick ta" data-name="duo blush and cream">
+<span class="brand">PATRICK TA</span>
+<h3>Duo Blush and Cream</h3>
+<div class="product-bottom"><span class="price">₱999</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for PATRICK TA Duo Blush and Cream">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="PATRICK TA" data-name="Duo Blush and Cream" data-price="999">Order now ↗</button>
+</article>\n<article class="product" data-brand="hourglass" data-name="liquid blush">
+<span class="brand">HOURGLASS</span>
+<h3>Liquid Blush</h3>
+<div class="product-bottom"><span class="price">₱699</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for HOURGLASS Liquid Blush">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="HOURGLASS" data-name="Liquid Blush" data-price="699">Order now ↗</button>
+</article>\n<article class="product" data-brand="hourglass" data-name="powder blush">
+<span class="brand">HOURGLASS</span>
+<h3>Powder Blush</h3>
+<div class="product-bottom"><span class="price">₱800</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for HOURGLASS Powder Blush">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="HOURGLASS" data-name="Powder Blush" data-price="800">Order now ↗</button>
+</article>\n<article class="product" data-brand="hourglass" data-name="press powder">
+<span class="brand">HOURGLASS</span>
+<h3>Press Powder</h3>
+<div class="product-bottom"><span class="price">₱900</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for HOURGLASS Press Powder">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="HOURGLASS" data-name="Press Powder" data-price="900">Order now ↗</button>
+</article>\n<article class="product" data-brand="hourglass" data-name="glossy lip balm">
+<span class="brand">HOURGLASS</span>
+<h3>Glossy Lip Balm</h3>
+<div class="product-bottom"><span class="price">₱600</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for HOURGLASS Glossy Lip Balm">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="HOURGLASS" data-name="Glossy Lip Balm" data-price="600">Order now ↗</button>
+</article>\n<article class="product" data-brand="hourglass" data-name="liquid concealer">
+<span class="brand">HOURGLASS</span>
+<h3>Liquid Concealer</h3>
+<div class="product-bottom"><span class="price">₱850</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for HOURGLASS Liquid Concealer">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="HOURGLASS" data-name="Liquid Concealer" data-price="850">Order now ↗</button>
+</article>\n<article class="product" data-brand="gisou" data-name="lip oil">
+<span class="brand">GISOU</span>
+<h3>Lip Oil</h3>
+<div class="product-bottom"><span class="price">₱499</span>
+<label class="qty-label"><span class="sr-only">Quantity</span><select class="qty" aria-label="Quantity for GISOU Lip Oil">
+<option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option>
+</select></label></div>
+<button class="order" type="button" data-brand="GISOU" data-name="Lip Oil" data-price="499">Order now ↗</button>
+</article>\n</div>
+</section>
+<section class="note" id="contact"><div><h3>Ready to order? ♡</h3><p>Select the quantity, then tap Order now. Your order details will be prepared for you to send through Facebook Messenger.</p></div><a class="btn" href="https://facebook.com/nayafindsco" target="_blank" rel="noopener">Message Naya Finds Co. ↗</a></section>
+</main>
+<footer><div class="footer-inner"><div><a class="logo" href="#">Naya Finds Co.</a><p>Pretty finds, thoughtfully picked and wrapped with love.</p></div><p>© <span id="year"></span> Naya Finds Co.<br>Prices shown are based on the supplied pricelist.</p></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const search = document.getElementById('search');
+const productCards = Array.from(document.querySelectorAll('.product'));
+search.addEventListener('input', () => {
+  const q = search.value.toLowerCase().trim();
+  let visible = 0;
+  productCards.forEach(card => {
+    const match = card.dataset.brand.includes(q) || card.dataset.name.includes(q);
+    card.style.display = match ? '' : 'none';
+    if (match) visible++;
+  });
+  let empty = document.getElementById('no-results');
+  if (!visible) {
+    if (!empty) {
+      empty = document.createElement('div');
+      empty.id = 'no-results';
+      empty.className = 'empty';
+      empty.textContent = 'No products found. Try another search.';
+      document.getElementById('products').appendChild(empty);
+    }
+    empty.style.display = 'block';
+  } else if (empty) empty.style.display = 'none';
+});
+document.querySelectorAll('.order').forEach(button => {
+  button.addEventListener('click', () => {
+    const card = button.closest('.product');
+    const qty = Number(card.querySelector('.qty').value);
+    const brand = button.dataset.brand;
+    const name = button.dataset.name;
+    const price = Number(button.dataset.price);
+    const fmt = n => n.toLocaleString('en-PH');
+    const msg = `Hello Naya Finds Co.! I would like to order:\nBrand: ${brand}\nProduct: ${name}\nQuantity: ${qty}\nUnit price: ₱${fmt(price)}\nTotal: ₱${fmt(price * qty)}\nPlease confirm availability. Thank you!`;
+    window.prompt('Copy your order details and paste into Messenger:', msg);
+  });
+});
+</script>
+</body>
+</html>
