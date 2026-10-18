@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Naya Finds Co. — high-end makeup price list.">
+<title>High-End Makeup Pricelist | Naya Finds Co.</title>
+<style>
+:root{--wine:#7e202b;--rose:#b66e7c;--blush:#f8e9eb;--cream:#fffaf8;--ink:#292326;--muted:#766c6f;--line:#eadde0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}.announcement{background:var(--wine);color:white;text-align:center;padding:10px 14px;font-size:11px;letter-spacing:2px;font-weight:700}
+header{background:#fffaf8ed;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(10px)}
+.nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{font-family:Georgia,serif;font-size:25px;font-weight:bold;letter-spacing:-1px;color:var(--wine)}.logo span{color:var(--ink)}
+.bag{border:1px solid var(--line);border-radius:999px;padding:10px 13px;background:white;font-size:12px}
+main{max-width:1100px;margin:auto;padding:22px 20px 55px}
+.hero{background:linear-gradient(120deg,#81242f,#a95565 60%,#c38b99);color:white;border-radius:25px;padding:clamp(28px,5vw,58px);position:relative;overflow:hidden}
+.eyebrow{font-size:11px;letter-spacing:3px;font-weight:700;margin:0 0 14px}h1{font-family:Georgia,serif;font-size:clamp(34px,6vw,58px);line-height:1.03;letter-spacing:-1.5px;margin:0 0 15px}
+.hero p{font-size:14px;line-height:1.7;max-width:600px;color:#fff0f2;margin:0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:32px 0 16px}.section-head h2{font-family:Georgia,serif;font-size:27px;margin:0}.section-head p{font-size:13px;color:var(--muted);margin:6px 0 0}
+.toolbar{display:flex;gap:10px;margin:16px 0 18px}.search{flex:1;min-width:0;border:1px solid var(--line);background:white;border-radius:13px;padding:13px 14px;font-size:14px;outline-color:var(--rose)}select{max-width:100%;border:1px solid var(--line);border-radius:13px;padding:12px;background:white;color:var(--ink);font-size:13px}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.product{background:white;border:1px solid var(--line);border-radius:16px;padding:17px;display:flex;flex-direction:column;min-width:0;box-shadow:0 4px 14px #53212b08}
+.brand{display:inline-flex;align-self:flex-start;background:var(--blush);color:var(--wine);padding:6px 9px;border-radius:999px;font-size:10px;letter-spacing:.7px;font-weight:800;margin-bottom:12px}
+.product h3{font-size:15px;line-height:1.4;margin:0 0 12px;min-height:42px}
+.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}
+.price{font-weight:800;color:var(--wine);font-size:17px;white-space:nowrap}
+.qty{width:88px;padding:8px;border-radius:10px;font-size:12px}
+.order{border:0;border-radius:999px;padding:11px 14px;background:var(--wine);color:white;font-size:12px;font-weight:700;cursor:pointer;margin-top:14px;width:100%}
+.order:hover{background:#5e1720}
+.empty{display:none;grid-column:1/-1;padding:25px;text-align:center;color:var(--muted);background:white;border:1px solid var(--line);border-radius:16px}
+.note{margin-top:28px;background:var(--blush);border-radius:18px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.note h3{font-family:Georgia,serif;font-size:22px;margin:0 0 7px}.note p{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
+.btn{display:inline-block;border:0;border-radius:999px;padding:13px 18px;font-weight:700;background:var(--wine);color:white;font-size:13px;white-space:nowrap}
+footer{background:#381b20;color:#fff5f5;padding:27px 20px}.footer-inner{max-width:1060px;margin:auto;display:flex;justify-content:space-between;gap:18px;align-items:center}.footer-inner p{font-size:12px;color:#e3c9ce;line-height:1.6}
+@media(max-width:760px){.nav{padding:14px}.logo{font-size:22px}main{padding:15px 13px 38px}.hero{border-radius:20px;padding:28px 22px}.toolbar{flex-direction:column}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product{padding:12px}.product h3{font-size:13px;min-height:38px}.product-bottom{align-items:flex-start;flex-direction:column;gap:8px}.qty{width:100%}.price{font-size:16px}.note,.footer-inner{align-items:flex-start;flex-direction:column}.section-head h2{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="announcement">HIGH-END MAKEUP PRICELIST ✨</div>
+<header><nav class="nav">
+<a class="logo" href="#"><span>Naya</span> Finds Co.</a>
+<a class="bag" href="#shop">73 BEAUTY FINDS ♡</a>
+</nav></header>
+<main>
+<section class="hero">
+<p class="eyebrow">NAYA FINDS CO. ✨</p>
+<h1>High-End Make Up<br>Pricelist</h1>
+<p>Browse your favorite beauty finds by brand. Prices are listed in Philippine pesos. No product photos or shade selections for now.</p>
+</section>
+<section id="shop">
+<div class="section-head"><div><h2>Shop the pricelist</h2><p>Search a product or filter by brand.</p></div></div>
+<div class="toolbar">
+<input class="search" id="search" placeholder="⌕ Search product or brand..." aria-label="Search product or brand">
+<select id="filter" aria-label="Filter by brand"><option value="All">All brands</option><option value="DIOR">DIOR</option><option value="CHARLOTTE TILBURY">CHARLOTTE TILBURY</option><option value="YSL">YSL</option><option value="KIKO MILANO">KIKO MILANO</option><option value="NARS">NARS</option><option value="RHODE">RHODE</option><option value="RARE BEAUTY">RARE BEAUTY</option><option value="ELF">ELF</option><option value="CHANEL">CHANEL</option><option value="MAC">MAC</option><option value="NYX">NYX</option><option value="HUDA BEAUTY">HUDA BEAUTY</option><option value="PATRICK TA">PATRICK TA</option><option value="HOURGLASS">HOURGLASS</option><option value="GISOU">GISOU</option></select>
+</div>
+<div class="products" id="products"></div>
+</section>
+<section class="note" id="contact"><div><h3>Ready to order? ♡</h3><p>Select the quantity, then tap Order now. Your order details will be prepared for you to send through Facebook Messenger.</p></div><a class="btn" href="https://facebook.com/nayafindsco" target="_blank" rel="noopener">Message Naya Finds Co. ↗</a></section>
+</main>
+<footer><div class="footer-inner"><div><a class="logo" href="#">Naya Finds Co.</a><p>Pretty finds, thoughtfully picked and wrapped with love.</p></div><p>© <span id="year"></span> Naya Finds Co.<br>Prices shown are based on the supplied pricelist.</p></div></footer>
+<script>
+const catalog = [{"brand": "DIOR", "name": "Lip Maximizer", "price": 638}, {"brand": "DIOR", "name": "Lip Bright Butter", "price": 620}, {"brand": "DIOR", "name": "Blush", "price": 869}, {"brand": "DIOR", "name": "Blush Contouring", "price": 783}, {"brand": "DIOR", "name": "Glow Face", "price": 878}, {"brand": "DIOR", "name": "Eye Shadow", "price": 839}, {"brand": "DIOR", "name": "Lip Glow Oil", "price": 519}, {"brand": "DIOR", "name": "Lip Balm", "price": 455}, {"brand": "DIOR", "name": "Mascara", "price": 500}, {"brand": "CHARLOTTE TILBURY", "name": "Powder Oil Control", "price": 858}, {"brand": "CHARLOTTE TILBURY", "name": "Powder Blush", "price": 899}, {"brand": "CHARLOTTE TILBURY", "name": "Blush 2 Color", "price": 966}, {"brand": "CHARLOTTE TILBURY", "name": "Mist Spray 100ml", "price": 999}, {"brand": "CHARLOTTE TILBURY", "name": "Lip Cheek Stick", "price": 749}, {"brand": "CHARLOTTE TILBURY", "name": "Lip Nectar Oil", "price": 449}, {"brand": "CHARLOTTE TILBURY", "name": "Foundation", "price": 850}, {"brand": "CHARLOTTE TILBURY", "name": "Eye Shadow", "price": 780}, {"brand": "YSL", "name": "Blush", "price": 799}, {"brand": "YSL", "name": "Lip Loveshine", "price": 999}, {"brand": "YSL", "name": "Cushion", "price": 999}, {"brand": "YSL", "name": "Setting Powder", "price": 999}, {"brand": "KIKO MILANO", "name": "Double Head", "price": 699}, {"brand": "KIKO MILANO", "name": "3D Hydra", "price": 699}, {"brand": "KIKO MILANO", "name": "3D Hydra Extreme", "price": 750}, {"brand": "KIKO MILANO", "name": "Limited Edition", "price": 750}, {"brand": "KIKO MILANO", "name": "Sponge", "price": 200}, {"brand": "KIKO MILANO", "name": "Blush", "price": 699}, {"brand": "KIKO MILANO", "name": "Powder", "price": 699}, {"brand": "NARS", "name": "Concealer", "price": 549}, {"brand": "NARS", "name": "Foundation", "price": 869}, {"brand": "NARS", "name": "Blush", "price": 804}, {"brand": "RHODE", "name": "Phone Case w/ Lip and Box", "price": 450}, {"brand": "RHODE", "name": "PocketBlush", "price": 500}, {"brand": "RHODE", "name": "Lip Moisturizer", "price": 420}, {"brand": "RHODE", "name": "4pcs Set", "price": 520}, {"brand": "RHODE", "name": "Milk Facial Essence", "price": 699}, {"brand": "RHODE", "name": "Cream Gel Moisturize", "price": 499}, {"brand": "RHODE", "name": "Glazing Mist", "price": 950}, {"brand": "RHODE", "name": "Highlighter", "price": 599}, {"brand": "RARE BEAUTY", "name": "Lip and Cheek", "price": 400}, {"brand": "RARE BEAUTY", "name": "Matte Blush", "price": 500}, {"brand": "RARE BEAUTY", "name": "Foundation", "price": 600}, {"brand": "RARE BEAUTY", "name": "Powder Foundation", "price": 600}, {"brand": "RARE BEAUTY", "name": "Highlighter", "price": 600}, {"brand": "RARE BEAUTY", "name": "Lip Glaze", "price": 500}, {"brand": "RARE BEAUTY", "name": "Liquid Blush", "price": 500}, {"brand": "RARE BEAUTY", "name": "Liquid Highlighter", "price": 500}, {"brand": "RARE BEAUTY", "name": "Mascara", "price": 500}, {"brand": "RARE BEAUTY", "name": "Bronzer Stick", "price": 630}, {"brand": "RARE BEAUTY", "name": "Hand Cream", "price": 500}, {"brand": "ELF", "name": "Foundation", "price": 620}, {"brand": "ELF", "name": "Liquid Blush", "price": 500}, {"brand": "ELF", "name": "Melting Lip Balm", "price": 450}, {"brand": "ELF", "name": "Primer", "price": 500}, {"brand": "CHANEL", "name": "Mascara", "price": 450}, {"brand": "MAC", "name": "Blush", "price": 599}, {"brand": "MAC", "name": "Lipstick", "price": 499}, {"brand": "MAC", "name": "Mascara", "price": 350}, {"brand": "NYX", "name": "Lip Gloss Stain", "price": 450}, {"brand": "NYX", "name": "Lip Liner", "price": 300}, {"brand": "NYX", "name": "16 Color Eyeshadow", "price": 699}, {"brand": "HUDA BEAUTY", "name": "Setting Powder", "price": 800}, {"brand": "HUDA BEAUTY", "name": "Lip Gloss", "price": 480}, {"brand": "HUDA BEAUTY", "name": "Liquid Eyeliner", "price": 250}, {"brand": "HUDA BEAUTY", "name": "EasyBake", "price": 750}, {"brand": "HUDA BEAUTY", "name": "EasyBake Duo", "price": 850}, {"brand": "PATRICK TA", "name": "Duo Blush and Cream", "price": 999}, {"brand": "HOURGLASS", "name": "Liquid Blush", "price": 699}, {"brand": "HOURGLASS", "name": "Powder Blush", "price": 800}, {"brand": "HOURGLASS", "name": "Press Powder", "price": 900}, {"brand": "HOURGLASS", "name": "Glossy Lip Balm", "price": 600}, {"brand": "HOURGLASS", "name": "Liquid Concealer", "price": 850}, {"brand": "GISOU", "name": "Lip Oil", "price": 499}];
+document.getElementById('year').textContent = new Date().getFullYear();
+const productsEl = document.getElementById('products');
+const search = document.getElementById('search');
+const filter = document.getElementById('filter');
+function render() {
+ const q = search.value.toLowerCase().trim();
+ const f = filter.value;
+ const shown = catalog.filter(p => (f === 'All' || p.brand === f) && (p.brand.toLowerCase().includes(q) || p.name.toLowerCase().includes(q)));
+ productsEl.innerHTML = '';
+ shown.forEach((p, i) => {
+   const card = document.createElement('article');
+   card.className = 'product';
+   card.innerHTML = `<span class="brand">${p.brand}</span><h3>${p.name}</h3><div class="product-bottom"><span class="price">₱${p.price.toLocaleString('en-PH')}</span><select class="qty" aria-label="Quantity for ${p.brand} ${p.name}"><option value="1">Qty: 1</option><option value="2">Qty: 2</option><option value="3">Qty: 3</option><option value="4">Qty: 4</option><option value="5">Qty: 5</option><option value="10">Qty: 10</option></select></div><button class="order" type="button">Order now ↗</button>`;
+   card.querySelector('.order').addEventListener('click', () => {
+     const qty = Number(card.querySelector('.qty').value);
+     const total = p.price * qty;
+     const msg = `Hello Naya Finds Co.! I would like to order:\nBrand: ${p.brand}\nProduct: ${p.name}\nQuantity: ${qty}\nUnit price: ₱${p.price.toLocaleString('en-PH')}\nTotal: ₱${total.toLocaleString('en-PH')}\nPlease confirm availability. Thank you!`;
+     try {
+       if (navigator.clipboard && navigator.clipboard.writeText) {
+         navigator.clipboard.writeText(msg).then(() => { alert('Order details copied! Paste them into Messenger to send your order.'); window.open('https://facebook.com/nayafindsco','_blank','noopener'); }).catch(() => window.prompt('Copy your order details and paste into Messenger:', msg));
+       } else {
+         window.prompt('Copy your order details and paste into Messenger:', msg);
+       }
+     } catch(e) { window.prompt('Copy your order details and paste into Messenger:', msg); }
+   });
+   productsEl.appendChild(card);
+ });
+ const empty = document.getElementById('empty');
+ if (!shown.length) { productsEl.innerHTML = '<div class="empty" style="display:block">No products found. Try another search.</div>'; }
+}
+search.addEventListener('input', render);
+filter.addEventListener('change', render);
+render();
+</script>
+</body>
+</html>
